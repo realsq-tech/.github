@@ -66,9 +66,10 @@ Built on modern, scalable tech like Node.js, Fastify, MongoDB, and Flutter.
 ## 🤝 Contributing
 
 ```
-git config --global alias.cb "!f() { git checkout -b $1 && git pull origin develop; }; f"
-git config --global alias.sync "!git pull origin develop"
-git config --global alias.pub "!git push -u origin $(git branch --show-current)"
+git config --global alias.cb '!f() { git checkout -b "$1" && git pull origin develop; }; f'
+git config --global alias.sync '!git pull origin develop'
+git config --global alias.pub '!git push -u origin $(git branch --show-current)'
+git config --global --get-regexp alias
 ```
 
 We welcome contributions! Please check the `CONTRIBUTING.md` in each repo and follow the branching and PR conventions. Issues and discussions are open for collaboration.
